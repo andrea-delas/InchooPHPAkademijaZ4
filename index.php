@@ -126,10 +126,53 @@ while( true ) {
 
     $choice = trim(fgets(STDIN));
 
-    if ($choice == 5) {
 
-        break;
+    switch ($choice) {
+
+        case 1:
+            {
+
+
+                break;
+            }
+        case 2:
+            {
+                break;
+            }
+        case 3:
+            {
+                break;
+            }
+        case 4:
+            {
+                break;
+            }
+        case 5:
+            {  prikaziPodIzbornik();
+                $choice = trim(fgets(STDIN));
+
+            }
+        default:
+            {
+
+            }
     }
+}
+function prikaziIzbornik() {
+
+echo "************ Registar zaposlenika ******************\n";
+echo "1 - Pregled zaposlenika\n";
+echo "2 - Unos novog zaposlenika\n";
+echo "3 - Promjena podataka postojećem zaposleniku\n";
+echo "4 - Brisanje zaposlenika\n";
+echo "5 - Statistika\n";
+echo "************ Registar zaposlenika ******************\n";
+echo "Odaberite brojeve od 1 do 5:";
+}
+
+while( true ) {
+
+
 
 
     switch ($choice) {
@@ -158,18 +201,21 @@ while( true ) {
             }
         default:
             {
-                echo;
+
             }
     }
 }
-function prikaziIzbornik() {
+function prikaziPodIzbornik()
+{
 
-echo "************ Registar zaposlenika ******************\n";
-echo "1 - Pregled zaposlenika\n";
-echo "2 - Unos novog zaposlenika\n";
-echo "3 - Promjena podataka postojećem zaposleniku\n";
-echo "4 - Brisanje zaposlenika\n";
-echo "5 - Statistika\n";
-echo "************ Registar zaposlenika ******************\n";
-echo "Odaberite brojeve od 1 do 5:";
+    echo "************ Statistika zaposlenika ******************\n";
+    echo "1 - Ukupna starost\n";
+    echo "2 - Prosječna starost\n";
+    echo "3 - Ukupna primanja\n";
+    echo "4 - Prosječna primanja\n";
+    echo "************ Statistika zaposlenika ******************\n";
+    echo "Odaberite brojeve od 1 do 4:";
+
 }
+
+
